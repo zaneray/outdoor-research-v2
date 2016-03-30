@@ -21,6 +21,7 @@
   color: #FF6916;
   margin-bottom: 10px;
   display: block;
+  text-transform: uppercase;
 }
 .text-style-section,
 .button-section {
