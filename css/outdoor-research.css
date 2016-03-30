@@ -141,7 +141,7 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background-color: #da1a32;
+  background-color: #acd554;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -206,8 +206,8 @@ h6 {
 }
 blockquote {
   font-family: "proxima-nova", sans-serif;
-  border-left: none;
   font-weight: normal;
+  border-left: none;
   font-style: italic;
   font-size: 28px;
   color: #acd554;
@@ -373,6 +373,9 @@ hr.end-mark {
 }
 /* END BUTTON STYLES */
 /* FORM STYLES */
+#input-example {
+  margin-top: 0;
+}
 input,
 textarea {
   height: 40px;
@@ -536,7 +539,7 @@ textarea {
 .dark-theme input,
 .dark-theme textarea,
 .dark-theme select {
-  background-color: #413d3e;
+  background-color: rgba(245, 246, 245, 0.04);
 }
 .dark-theme input:focus,
 .dark-theme textarea:focus,
@@ -553,10 +556,9 @@ textarea {
   color: #f5f6f5;
 }
 /* END FORM STYLES */
-
 /* BOOTSTRAP OVERRIDES */
-@media (min-width: 1200px){
-  .container{
+@media (min-width: 1200px) {
+  .container {
     width: 1200px !important;
   }
 }

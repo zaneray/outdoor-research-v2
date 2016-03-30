@@ -61,6 +61,7 @@
     display: block;
     text-transform: uppercase;
   }
+
 }
 .text-style-section, .button-section{
   margin-bottom: @margin-small;
@@ -169,7 +170,7 @@
     width: 26px;
     height: 26px;
     border-radius: 50%;
-    background-color: @color-brand-primary;
+    background-color: @color-action;
     transition: all 0.3s ease-out;
   }
 
@@ -235,9 +236,9 @@ h6{
 blockquote{
   font-family: "proxima-nova", sans-serif;
   font-weight: normal;
+  border-left: none;
   font-style: italic;
   font-size: 28px;
-  border-left: none;
   color: @color-action;
   text-align: center;
   margin-top: 0;
@@ -402,6 +403,9 @@ hr{
 /* END BUTTON STYLES */
 
 /* FORM STYLES */
+#input-example{
+  margin-top: 0;
+}
 input, textarea{
   height: 40px;
   width: 100%;
@@ -556,7 +560,7 @@ textarea{
 
 .dark-theme{
   input, textarea, select{
-    background-color: @color-gray-dark;
+    background-color: rgba(245, 246, 245, 0.04);
 
     &:focus, &:active{
       border-color: #fff;
@@ -569,6 +573,14 @@ textarea{
   }
 }
 /* END FORM STYLES */
+
+/* BOOTSTRAP OVERRIDES */
+@media (min-width: 1200px){
+  .container{
+    width: 1200px !important;
+  }
+}
+/* END BOOTSTRAP OVERRIDES */
 
 
 
