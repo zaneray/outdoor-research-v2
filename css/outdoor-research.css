@@ -40,9 +40,25 @@
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .action-color-section {
+  margin-right: 90px;
+}
+.neutral-color-section {
+  margin-right: 0;
+}
+@media (min-width: 839px) {
+  .neutral-color-section {
+    margin-right: 90px;
+  }
+}
+@media (min-width: 1200px) {
+  .neutral-color-section {
+    margin-right: 0;
+  }
+}
+.secondary-color-section {
   margin-right: 90px;
 }
 .color-thumb {
@@ -55,12 +71,41 @@
           flex-direction: column;
   width: 180px;
 }
-.color-thumb-small {
+.color-thumb-skinny {
   width: 90px;
 }
-.color-thumb-small .color-block {
+.color-thumb-skinny .color-block {
   width: 85px;
   font-size: 18px;
+}
+.color-thumb-large {
+  width: 360px;
+}
+.color-thumb-large .color-block {
+  width: 355px;
+  color: #fff !important;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 60px;
+}
+.color-thumb-short .color-block {
+  height: 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  position: relative;
+}
+.color-thumb-short .color-block i {
+  position: absolute;
+  left: 10px;
+  top: 15px;
 }
 .color-block {
   display: -webkit-box;
@@ -103,6 +148,15 @@
 .color-block.gray-lightest {
   background-color: #f5f6f5;
   color: #413d3e;
+}
+.color-block.error {
+  background-color: #b10016;
+}
+.color-block.warning {
+  background-color: #e5a423;
+}
+.color-block.success {
+  background-color: #5fa318;
 }
 /* END COLORS */
 /* INTERFACE ELEMENTS */
@@ -164,9 +218,10 @@ h1.display-technical {
   font-weight: normal;
 }
 h1.display-hand {
-  font-family: "hand-OR";
+  font-family: "handOR", sans-serif;
   font-size: 60px;
   font-weight: normal;
+  text-transform: none;
 }
 h2 {
   font-family: "proxima-nova", sans-serif;
