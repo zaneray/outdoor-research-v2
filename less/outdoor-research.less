@@ -475,21 +475,51 @@ input, textarea{
     color: @color-brand-secondary;
     outline: none;
   }
-  &.success{
+}
+.input-error{
+  position: relative;
+
+  input{
+    border-color: @color-error;
+    color: @color-error;
+    padding-right: 45px;
+
+    &::-webkit-input-placeholder{
+      color: @color-error;
+    }
+  }
+
+  &:after{
+    content: "\e900";
+    font-family: "icomoon";
+    color: @color-error;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    font-size: 15px;
+  }
+}
+.input-success{
+  position: relative;
+
+  input{
     border-color: @color-success;
     color: @color-success;
+    padding-right: 45px;
 
     &::-webkit-input-placeholder{
       color: @color-success;
     }
   }
-  &.error{
-    border-color: @color-error;
-    color: @color-error;
 
-    &::-webkit-input-placeholder{
-      color: @color-error;
-    }
+  &:after{
+    content: "\ed72";
+    font-family: "icomoon";
+    color: @color-success;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    font-size: 15px;
   }
 }
 select{

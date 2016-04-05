@@ -458,23 +458,45 @@ textarea:active {
   color: #231f20;
   outline: none;
 }
-input.success,
-textarea.success {
-  border-color: #5fa318;
-  color: #5fa318;
+.input-error {
+  position: relative;
 }
-input.success::-webkit-input-placeholder,
-textarea.success::-webkit-input-placeholder {
-  color: #5fa318;
-}
-input.error,
-textarea.error {
+.input-error input {
   border-color: #b10016;
   color: #b10016;
+  padding-right: 45px;
 }
-input.error::-webkit-input-placeholder,
-textarea.error::-webkit-input-placeholder {
+.input-error input::-webkit-input-placeholder {
   color: #b10016;
+}
+.input-error:after {
+  content: "\e900";
+  font-family: "icomoon";
+  color: #b10016;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  font-size: 15px;
+}
+.input-success {
+  position: relative;
+}
+.input-success input {
+  border-color: #5fa318;
+  color: #5fa318;
+  padding-right: 45px;
+}
+.input-success input::-webkit-input-placeholder {
+  color: #5fa318;
+}
+.input-success:after {
+  content: "\ed72";
+  font-family: "icomoon";
+  color: #5fa318;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  font-size: 15px;
 }
 select {
   height: 40px;
