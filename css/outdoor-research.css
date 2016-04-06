@@ -5,11 +5,13 @@
 }
 .style-guide-header {
   text-align: center;
+  padding: 60px;
+  background-color: #f5f6f5;
   margin-bottom: 60px;
 }
 .style-guide-header h1 {
-  color: #231f20;
-  margin-top: 15px;
+  color: #656263;
+  margin-top: 30px;
 }
 .style-guide-header svg {
   max-height: 100px;
@@ -570,6 +572,8 @@ textarea {
   border-radius: 3px;
   color: #231f20;
   background-color: #f5f6f5;
+  -webkit-transition: background-color 0.15s ease-out;
+  transition: background-color 0.15s ease-out;
   content: "";
   z-index: 1;
   border: 1px solid #e2e2e2;
@@ -578,11 +582,15 @@ textarea {
 .radio label:after {
   content: "";
   opacity: 0;
-  -webkit-transition: opacity 15ms ease-out;
-  transition: opacity 15ms ease-out;
+  -webkit-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
   position: absolute;
   z-index: 2;
   display: block;
+}
+.checkbox label:hover:before,
+.radio label:hover:before {
+  background-color: #dadeda;
 }
 .radio input:checked + label:after,
 .checkbox input:checked + label:after {
@@ -614,6 +622,7 @@ textarea {
 .dark-theme input,
 .dark-theme textarea,
 .dark-theme select {
+  border-color: #656263;
   background-color: rgba(245, 246, 245, 0.04);
 }
 .dark-theme input:focus,
@@ -626,9 +635,23 @@ textarea {
   color: #fff;
   outline: none;
 }
+.dark-theme .input-error input {
+  border-color: #b10016;
+}
+.dark-theme .input-success input {
+  border-color: #5fa318;
+}
 .dark-theme .checkbox label,
 .dark-theme .radio label {
   color: #f5f6f5;
+}
+.dark-theme .checkbox label:before,
+.dark-theme .radio label:before {
+  background-color: #231f20;
+}
+.dark-theme .checkbox label:hover:before,
+.dark-theme .radio label:hover:before {
+  background-color: #3e3739;
 }
 /* END FORM STYLES */
 /* BOOTSTRAP OVERRIDES */

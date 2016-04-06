@@ -42,11 +42,13 @@
 }
 .style-guide-header{
   text-align: center;
+  padding: @margin-large;
+  background-color: @color-gray-lightest;
   margin-bottom: @margin-large;
 
   h1{
-    color: @color-brand-secondary;
-    margin-top: @margin-small;
+    color: @color-gray;
+    margin-top: @margin-base;
   }
 
   svg{
@@ -591,6 +593,7 @@ textarea{
     border-radius: 3px;
     color: @color-brand-secondary;
     background-color: @color-gray-lightest;
+    transition: background-color 0.15s ease-out;
     content: "";
     z-index: 1;
     border: 1px solid @color-gray-light;
@@ -598,11 +601,16 @@ textarea{
   &:after {
     content: "";
     opacity: 0;
-    transition: opacity 15ms ease-out;
+    transition: opacity 0.15s ease-out;
     position: absolute;
     z-index: 2;
     display: block;
 
+  }
+  &:hover{
+    &:before{
+      background-color: darken(@color-gray-lightest, 10%);
+    }
   }
 }
 
@@ -636,6 +644,7 @@ textarea{
 
 .dark-theme{
   input, textarea, select{
+    border-color: @color-gray;
     background-color: rgba(245, 246, 245, 0.04);
 
     &:focus, &:active{
@@ -644,8 +653,22 @@ textarea{
       outline: none;
     }
   }
+  .input-error input{
+      border-color: @color-error;
+  }
+  .input-success input{
+      border-color: @color-success;
+  }
   .checkbox label, .radio label {
     color: @color-gray-lightest;
+    &:before {
+      background-color: @color-brand-secondary;
+    }
+    &:hover{
+      &:before{
+        background-color: lighten(@color-brand-secondary, 10%);
+      }
+    }
   }
 }
 /* END FORM STYLES */
