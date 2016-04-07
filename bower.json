@@ -1,0 +1,9 @@
+{
+  "name": "outdoor-research",
+  "description": "outdoor-research bower build setup",
+  "version": "1.0",
+  "dependencies": {
+     "jquery": ""
+    },
+  "engine": "node >= 0.10"
+}
