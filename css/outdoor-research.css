@@ -16,7 +16,7 @@
   margin-bottom: 60px;
 }
 .style-guide-header h1 {
-  color: #656263;
+  color: #4a4a4a;
   margin-top: 30px;
 }
 .style-guide-header svg {
@@ -139,15 +139,15 @@
   background-color: #413d3e;
 }
 .color-block.gray {
-  background-color: #656263;
+  background-color: #4a4a4a;
 }
 .color-block.gray-light {
   background-color: #e2e2e2;
-  color: #413d3e;
+  color: #4a4a4a;
 }
 .color-block.gray-lightest {
   background-color: #f5f6f5;
-  color: #413d3e;
+  color: #4a4a4a;
 }
 .color-block.error {
   background-color: #b10016;
@@ -207,7 +207,7 @@ h1 {
   font-family: "proxima-nova", sans-serif;
   font-weight: 900;
   font-size: 40px;
-  color: #413d3e;
+  color: #4a4a4a;
   margin-top: 0;
   line-height: 1;
   text-transform: uppercase;
@@ -227,7 +227,7 @@ h2 {
   font-family: "proxima-nova", sans-serif;
   font-weight: 300;
   font-size: 30px;
-  color: #413d3e;
+  color: #4a4a4a;
   margin-top: 0;
   line-height: 1;
   text-transform: uppercase;
@@ -236,7 +236,7 @@ h3 {
   font-family: "proxima-nova", sans-serif;
   font-weight: 900;
   font-size: 24px;
-  color: #413d3e;
+  color: #4a4a4a;
   margin-top: 0;
   line-height: 1;
   text-transform: uppercase;
@@ -245,7 +245,7 @@ h4 {
   font-family: "proxima-nova", sans-serif;
   font-weight: normal;
   font-size: 20px;
-  color: #413d3e;
+  color: #4a4a4a;
   margin-top: 0;
   line-height: 1;
   text-transform: none;
@@ -254,7 +254,7 @@ h6 {
   font-family: "alternate-gothic-no-3-d", sans-serif;
   font-weight: normal;
   font-size: 14px;
-  color: #413d3e;
+  color: #4a4a4a;
   margin-top: 0;
   line-height: 1;
   text-transform: uppercase;
@@ -306,7 +306,7 @@ label {
   font-family: "proxima-nova", sans-serif;
   font-weight: bold;
   font-size: 13px;
-  color: #656263;
+  color: #4a4a4a;
   margin-top: 0;
   line-height: 1.5;
   text-transform: none;
@@ -348,7 +348,7 @@ hr.large {
   border-top: 4px solid #231f20;
 }
 hr.small {
-  border-top: 2px solid #656263;
+  border-top: 1px solid #cbcbcb;
 }
 hr.end-mark {
   border-top: 8px solid #231f20;
@@ -381,9 +381,19 @@ hr.end-mark {
   color: #fff;
 }
 .btn.btn-secondary:hover {
-  background-color: #656263;
-  border: 2px solid #656263;
+  background-color: #4a4a4a;
+  border: 2px solid #4a4a4a;
   color: #fff;
+}
+.btn.btn-form {
+  background-color: #231f20;
+  border: 2px solid #231f20;
+  color: #acd554;
+}
+.btn.btn-form:hover {
+  background-color: #4a4a4a;
+  border: 2px solid #4a4a4a;
+  color: #acd554;
 }
 .btn.btn-action {
   height: 60px;
@@ -408,12 +418,22 @@ hr.end-mark {
 .dark-theme .btn.btn-secondary {
   background-color: #fff;
   border: 2px solid #fff;
-  color: #656263;
+  color: #4a4a4a;
 }
 .dark-theme .btn.btn-secondary:hover {
   background-color: #acd554;
   border: 2px solid #acd554;
   color: #fff;
+}
+.dark-theme .btn.btn-form {
+  background-color: #acd554;
+  border: 2px solid #acd554;
+  color: #231f20;
+}
+.dark-theme .btn.btn-form:hover {
+  background-color: #779026;
+  border: 2px solid #779026;
+  color: #231f20;
 }
 .dark-theme .btn.btn-action {
   height: 60px;
@@ -439,7 +459,7 @@ textarea {
   background-color: #f5f6f5;
   border-radius: 5px;
   padding: 0 10px;
-  color: #656263;
+  color: #4a4a4a;
   font-family: "proxima-nova", sans-serif;
   font-size: 16px;
   -webkit-transition: all 0.3s ease-out;
@@ -510,7 +530,7 @@ select {
   background-color: #f5f6f5;
   border-radius: 5px;
   padding-left: 10px;
-  color: #656263;
+  color: #4a4a4a;
   font-family: "proxima-nova", sans-serif;
   font-size: 16px;
   -webkit-transition: all 0.3s ease-out;
@@ -682,7 +702,7 @@ textarea {
 .dark-theme input,
 .dark-theme textarea,
 .dark-theme select {
-  border-color: #656263;
+  border-color: #4a4a4a;
   background-color: rgba(245, 246, 245, 0.04);
 }
 .dark-theme input:focus,
