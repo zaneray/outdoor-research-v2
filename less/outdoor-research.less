@@ -87,6 +87,10 @@
 .text-style-section, .button-section{
   margin-bottom: @margin-small;
 }
+.iconography-container{
+  display: flex;
+  flex-flow: row wrap;
+}
 /* END STYLE GUIDE FRAMEWORK*/
 
 
@@ -542,7 +546,7 @@ input, textarea{
   }
 
   &:after{
-    content: "\e900";
+    content: "\e901";
     font-family: "icomoon";
     color: @color-error;
     position: absolute;
@@ -565,7 +569,7 @@ input, textarea{
   }
 
   &:after{
-    content: "\ed72";
+    content: "\ed73";
     font-family: "icomoon";
     color: @color-success;
     position: absolute;
@@ -731,7 +735,7 @@ textarea{
 .checkbox label:after {
   left: 9px;
   top: 4px;
-  content: "\ed72";
+  content: "\ed73";
   font-family: "icomoon";
   font-size: 12px;
   color: #fff;
@@ -787,6 +791,112 @@ textarea{
   }
 }
 /* END BOOTSTRAP OVERRIDES */
+
+/* ANCHOR NAVIGATION STYELS */
+.style-guide-anchor-nav {
+  position: fixed;
+  left: -220px;
+  width: 220px;
+  background: rgba(0,0,0,.4);
+  padding: 10px;
+  margin: 0;
+  text-transform: uppercase;
+  z-index: 1000;
+  top: 200px;
+  transition: all .3s ease-out;
+  font-size: 13px;
+  li {
+    border-bottom: 1px solid rgba(255,255,255,.5);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  a {
+    padding: .5rem .5rem;
+    display: block;
+  }
+}
+.nav-theme-toggle{
+  display: flex;
+  align-items: center;
+
+  .nav-theme-toggle-label{
+    color: @color-action;
+  }
+  .theme-toggle{
+    margin: 10px 20px;
+  }
+}
+
+.style-guide-anchor-nav a {
+  &:hover {
+     background: rgba(0,0,0,.9);
+    text-decoration: none;
+  }
+}
+
+
+.style-guide-nav-item a {
+  color: @color-action;
+
+}
+
+.style-guide-anchor-item a {
+  padding-left: 1rem;
+  color: @color-action;
+  font-weight: normal;
+}
+
+.style-guide-anchor-span {
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: -30px;
+  background: rgba(0,0,0,.4);
+  cursor: pointer;
+   perspective: 800px;
+
+  transition: all .3s ease-out;
+  &:after {
+    content: '';
+    transform-style: preserve-3d;
+    transition: @transition-base;
+    transform-origin: center center;
+    transform: rotate(45deg);
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    width: 16px; 
+    height: 16px;
+    display: block;
+    margin-top: -5px;
+  }
+}
+
+.style-guide-anchor-nav.active {
+ background: rgba(0,0,0,.8);
+  left: 0;
+  .style-guide-anchor-span {
+    background: rgba(0,0,0,.8);
+
+    &:after {
+      transform: rotate( -135deg );
+    }
+  }
+}
+
+.style-guide-anchor-list  {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* END ANCHOR NAV STYLES*/
 
 
 
