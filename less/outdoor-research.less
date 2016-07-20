@@ -22,6 +22,7 @@
 @font-family-sans-serif: "proxima-nova", sans-serif;
 @font-family-sans-serif-alternate: "alternate-gothic-no-3-d", sans-serif;
 @font-family-handwritten: "handOR", sans-serif;
+@icomoon-font-family: "or-icomoon";
 
 @font-size-h1: 70px; 
 @font-size-h2: 30px;
@@ -547,7 +548,7 @@ input, textarea{
 
   &:after{
     content: "\e901";
-    font-family: "icomoon";
+    font-family: @icomoon-font-family;
     color: @color-error;
     position: absolute;
     right: 15px;
@@ -570,7 +571,7 @@ input, textarea{
 
   &:after{
     content: "\ed73";
-    font-family: "icomoon";
+    font-family: @icomoon-font-family;
     color: @color-success;
     position: absolute;
     right: 15px;
@@ -736,7 +737,7 @@ textarea{
   left: 9px;
   top: 4px;
   content: "\ed73";
-  font-family: "icomoon";
+  font-family: @icomoon-font-family;
   font-size: 12px;
   color: #fff;
 }
@@ -783,6 +784,29 @@ textarea{
   }
 }
 /* END FORM STYLES */
+
+/* Image Asset Styles */
+#image-section{
+  text-align: center;
+}
+.image-asset-group{
+  margin: @margin-base 0;
+}
+.style-guide-image-container{
+  margin: @margin-small 0;
+}
+.home-hero-image, .home-slideshow-image, .plp-hero-image, .plp-infusion-image, .pdp-background-image{
+  width: 100%;
+}
+
+.plp-infusion-container{
+  margin-left: auto;
+  margin-right: auto;
+}
+.plp-infusion-image{
+  max-width: 890px !important;
+}
+/* END IMAGE ASSET STYLES */
 
 /* BOOTSTRAP OVERRIDES */
 @media (min-width: 1200px){
