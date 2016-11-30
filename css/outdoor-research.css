@@ -264,7 +264,7 @@ h4 {
   text-transform: none;
 }
 h4.alt {
-  font-weight: bold;
+  color: #231f20;
 }
 h5 {
   font-family: "proxima-nova", sans-serif;
