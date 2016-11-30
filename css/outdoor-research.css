@@ -130,7 +130,7 @@
   font-weight: bold;
 }
 .color-block.action-default {
-  background-color: #acd554;
+  background-color: #9dc742;
 }
 .color-block.action-hover {
   background-color: #779026;
@@ -208,7 +208,7 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background-color: #acd554;
+  background-color: #9dc742;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -263,6 +263,18 @@ h4 {
   line-height: 1;
   text-transform: none;
 }
+h4.alt {
+  font-weight: bold;
+}
+h5 {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #231f20;
+  margin-top: 0;
+  line-height: 22px;
+  text-transform: none;
+}
 h6 {
   font-family: "alternate-gothic-no-3-d", sans-serif;
   font-weight: normal;
@@ -278,10 +290,10 @@ blockquote {
   border-left: none;
   font-style: italic;
   font-size: 28px;
-  color: #acd554;
+  color: #9b9b9b;
   text-align: center;
   margin-top: 0;
-  line-height: 1.5;
+  line-height: 34px;
   text-transform: none;
 }
 p {
@@ -304,7 +316,7 @@ a {
   font-family: "proxima-nova", sans-serif;
   font-weight: bold;
   font-size: 15px;
-  color: #acd554;
+  color: #9dc742;
   margin-top: 0;
   line-height: 1.5;
   text-transform: none;
@@ -385,8 +397,8 @@ hr.end-mark {
   transition: all 0.3s ease-out;
 }
 .btn:hover {
-  border-color: #acd554;
-  color: #acd554;
+  border-color: #9dc742;
+  color: #9dc742;
 }
 .btn.btn-secondary {
   background-color: #231f20;
@@ -401,17 +413,17 @@ hr.end-mark {
 .btn.btn-form {
   background-color: #231f20;
   border: 2px solid #231f20;
-  color: #acd554;
+  color: #9dc742;
 }
 .btn.btn-form:hover {
   background-color: #4a4a4a;
   border: 2px solid #4a4a4a;
-  color: #acd554;
+  color: #9dc742;
 }
 .btn.btn-action {
   height: 60px;
-  background-color: #acd554;
-  border: 2px solid #acd554;
+  background-color: #9dc742;
+  border: 2px solid #9dc742;
   font-size: 20px;
   color: #fff;
 }
@@ -425,8 +437,8 @@ hr.end-mark {
   color: #fff;
 }
 .dark-theme .btn:hover {
-  border-color: #acd554;
-  color: #acd554;
+  border-color: #9dc742;
+  color: #9dc742;
 }
 .dark-theme .btn.btn-secondary {
   background-color: #fff;
@@ -434,13 +446,13 @@ hr.end-mark {
   color: #4a4a4a;
 }
 .dark-theme .btn.btn-secondary:hover {
-  background-color: #acd554;
-  border: 2px solid #acd554;
+  background-color: #9dc742;
+  border: 2px solid #9dc742;
   color: #fff;
 }
 .dark-theme .btn.btn-form {
-  background-color: #acd554;
-  border: 2px solid #acd554;
+  background-color: #9dc742;
+  border: 2px solid #9dc742;
   color: #231f20;
 }
 .dark-theme .btn.btn-form:hover {
@@ -450,8 +462,8 @@ hr.end-mark {
 }
 .dark-theme .btn.btn-action {
   height: 60px;
-  background-color: #acd554;
-  border: 2px solid #acd554;
+  background-color: #9dc742;
+  border: 2px solid #9dc742;
   font-size: 20px;
 }
 .dark-theme .btn.btn-action:hover {
@@ -811,7 +823,7 @@ textarea {
           align-items: center;
 }
 .nav-theme-toggle .nav-theme-toggle-label {
-  color: #acd554;
+  color: #9dc742;
 }
 .nav-theme-toggle .theme-toggle {
   margin: 10px 20px;
@@ -821,11 +833,11 @@ textarea {
   text-decoration: none;
 }
 .style-guide-nav-item a {
-  color: #acd554;
+  color: #9dc742;
 }
 .style-guide-anchor-item a {
   padding-left: 1rem;
-  color: #acd554;
+  color: #9dc742;
   font-weight: normal;
 }
 .style-guide-anchor-span {

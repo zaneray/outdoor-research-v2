@@ -1,7 +1,7 @@
 /* OR Style Guide Styles */
 
 /* Variables */
-@color-action: #acd554;
+@color-action: #9dc742;
 @color-action-hover: #779026;
 @color-brand-primary: #da1a32;
 @color-brand-secondary: #231f20;
@@ -28,6 +28,7 @@
 @font-size-h2: 30px;
 @font-size-h3: 24px;
 @font-size-h4: 20px;
+@font-size-h5: 15px;
 @font-size-h6: 14px;
 @font-size-base: 15px;
 
@@ -303,6 +304,19 @@ h4{
   margin-top: 0;
   line-height: 1;
   text-transform: none;
+
+  &.alt{
+    font-weight: bold;
+  }
+}
+h5{
+  font-family: @font-family-sans-serif;
+  font-weight: bold;
+  font-size: @font-size-h5;
+  color: @color-brand-secondary;
+  margin-top: 0;
+  line-height: 22px;
+  text-transform: none;
 }
 h6{
   font-family: @font-family-sans-serif-alternate;
@@ -319,10 +333,10 @@ blockquote{
   border-left: none;
   font-style: italic;
   font-size: 28px;
-  color: @color-action;
+  color: @color-gray;
   text-align: center;
   margin-top: 0;
-  line-height: 1.5;
+  line-height: 34px;
   text-transform: none;
 }
 p{
