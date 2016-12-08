@@ -35,8 +35,8 @@ $(function(){
   var baseHTML = '<div class="style-guide-base-nav"><div class="container"><ul>';
 
   //Each style guide page
-  baseHTML += '<li><a href="/">Core Styles</a></li>';
-  baseHTML += '<li><a href="/templates/single-column.html">Single Column</a></li>';
+  baseHTML += '<li><a href="/outdoor-research">Core Styles</a></li>';
+  baseHTML += '<li><a href="/outdoor-research/templates/single-column.html">Single Column</a></li>';
 
   baseHTML += '</ul></div></div>';
 
