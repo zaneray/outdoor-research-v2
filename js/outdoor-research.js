@@ -31,5 +31,16 @@ $(function(){
     $styleGuideAnchorList.append('<li class="style-guide-anchor-item"><a href="#' + id + '" class="style-guide-anchor-link">' + title + '</a></li>')
   });
 
+  //build out the base nav section
+  var baseHTML = '<div class="style-guide-base-nav"><div class="container"><ul>';
+
+  //Each style guide page
+  baseHTML += '<li><a href="/">Core Styles</a></li>';
+  baseHTML += '<li><a href="/templates/single-column.html">Single Column</a></li>';
+
+  baseHTML += '</ul></div></div>';
+
+  $('body').append(baseHTML);
+
 });
 

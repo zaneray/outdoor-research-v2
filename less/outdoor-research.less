@@ -938,6 +938,48 @@ textarea{
 
 
 
+/* STYLE GUIDE BASE NAVE */
+.style-guide-base-nav{
+  background: @color-brand-secondary;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    height: 40px;
+    text-align: center;
+
+    li{
+      transform: skewX(-45deg) skewY(0deg);
+      margin: 5px 0;
+      display: inline-block;
+      text-align: center;
+      border-right: 2px solid #fff;
+
+      &:last-child{
+        border: none;
+      }
+
+      a{
+        transform: skewX(45deg) skewY(0deg);
+        display: block;
+        padding: 5px 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+/* END BASE NAV */
+
+
+
 
 
 
