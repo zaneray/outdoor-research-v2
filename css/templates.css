@@ -1,0 +1,20 @@
+/* OR Template Page Styles */
+/* Variables */
+/* END Variables */
+/* Single Column Content Styles */
+.content-wrapper {
+  margin: 30px 0 60px 0;
+}
+.content-page-header {
+  margin-top: 15px;
+}
+.content-page-hero {
+  width: 100%;
+}
+.single-column-content {
+  max-width: 770px;
+  margin: 45px auto 0;
+}
+.single-column-content-section {
+  margin: 30px 0;
+}

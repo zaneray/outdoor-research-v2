@@ -21,7 +21,7 @@ module.exports = function(grunt) {
        files : [{
           expand : true,            // Enable dynamic expansion.
           cwd : 'less/',             // Src matches are relative to this path.
-          src : ['outdoor-research.less'],         // Actual pattern(s) to match.
+          src : ['outdoor-research.less', 'templates.less'],         // Actual pattern(s) to match.
           dest : 'css/', // Destination path prefix.
           ext : '.css'              // Dest filepaths will have this extension.
         }]

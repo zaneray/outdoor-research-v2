@@ -8,6 +8,7 @@
   margin: 60px auto;
   font-size: 11px;
   color: #FF6916;
+  font-family: sans-serif;
 }
 .style-guide-header {
   text-align: center;
@@ -41,6 +42,26 @@
   flex-flow: row wrap;
 }
 /* END STYLE GUIDE FRAMEWORK*/
+/* GLOBAL FRAMEWORK STYLE */
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+@media (min-width: 1170px) {
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+body {
+  margin: 0;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+/* END GLOBAL STYLES */
 /* COLORS */
 .color-container {
   display: -webkit-box;
@@ -216,6 +237,18 @@
   left: 32px;
 }
 /* TEXT STYLES */
+html {
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  margin-bottom: 0.3em;
+}
 h1 {
   font-family: "proxima-nova", sans-serif;
   font-weight: 900;
@@ -320,12 +353,45 @@ a {
   margin-top: 0;
   line-height: 1.5;
   text-transform: none;
+  text-decoration: none;
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
 }
 a:hover {
   color: #779026;
   text-decoration: none;
+}
+.breadcrumb {
+  list-style: none;
+  background: none;
+  margin: 5px 0;
+  padding: 0;
+}
+.breadcrumb .breadcrumb-link {
+  display: inline-block;
+}
+.breadcrumb .breadcrumb-link a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: normal;
+  color: #4a4a4a;
+}
+.breadcrumb .breadcrumb-link:before {
+  content: "/";
+  color: #4a4a4a;
+  font-size: 14px;
+  padding: 0 5px;
+}
+.breadcrumb .breadcrumb-link:first-child:before {
+  display: none;
+}
+.image-caption {
+  display: block;
+  font-family: "alternate-gothic-no-3-d", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #413d3e;
+  margin-top: 10px;
 }
 label {
   font-family: "proxima-nova", sans-serif;
@@ -368,6 +434,7 @@ hr {
 /* DIVIDER STYLES */
 hr {
   border-top: 3px solid #231f20;
+  margin: 10px 0;
 }
 hr.large {
   border-top: 4px solid #231f20;
@@ -784,13 +851,6 @@ textarea {
   max-width: 890px !important;
 }
 /* END IMAGE ASSET STYLES */
-/* BOOTSTRAP OVERRIDES */
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px !important;
-  }
-}
-/* END BOOTSTRAP OVERRIDES */
 /* ANCHOR NAVIGATION STYELS */
 .style-guide-anchor-nav {
   position: fixed;

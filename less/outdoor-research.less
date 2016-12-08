@@ -1,5 +1,4 @@
 /* OR Style Guide Styles */
-
 /* Variables */
 @color-action: #9dc742;
 @color-action-hover: #779026;
@@ -34,8 +33,10 @@
 
 @transition-base: all 0.3s ease-out;
 
+@margin-xsmall: 5px;
 @margin-small: 15px;
 @margin-base: 30px;
+@margin-medium: 45px;
 @margin-large: 60px;
 @margin-xl: 90px;
 /* END Variables */
@@ -59,6 +60,7 @@
   margin: @margin-large auto;
   font-size: 11px;
   color: @color-style-guide-orange; 
+  font-family: sans-serif;
 }
 .style-guide-header{
   text-align: center;
@@ -94,6 +96,24 @@
   flex-flow: row wrap;
 }
 /* END STYLE GUIDE FRAMEWORK*/
+
+/* GLOBAL FRAMEWORK STYLE */
+.container{
+  width: 100%;
+  padding: 0 @margin-small;
+
+  @media (min-width: 1170px){
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+body{
+  margin: 0;
+}
+*, :after, :before{
+  box-sizing: border-box;
+}
+/* END GLOBAL STYLES */
 
 
 /* COLORS */
@@ -262,6 +282,15 @@
   }
 }
 /* TEXT STYLES */
+html{
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  margin-bottom: 0.3em;
+}
+
 h1{
   font-family: @font-family-sans-serif;
   font-weight: 900;
@@ -364,12 +393,51 @@ a{
   margin-top: 0;
   line-height: 1.5;
   text-transform: none;
+  text-decoration: none;
   transition: color 0.3s ease-out;
 
   &:hover{
     color: @color-action-hover;
     text-decoration: none;
   }
+}
+.breadcrumb{
+  list-style: none;
+  background: none;
+  margin: @margin-xsmall 0;
+  padding: 0;
+
+  .breadcrumb-link{
+    display: inline-block;
+
+    a{
+      text-transform: uppercase;
+      font-size: @font-size-h6;
+      font-weight: normal;
+      color: @color-gray-dark;
+    }
+
+    &:before{
+      content: "/";
+      color: @color-gray-dark;
+      font-size: @font-size-h6;
+      padding: 0 @margin-xsmall;
+    }
+
+    &:first-child{
+      &:before{
+        display: none;
+      }
+    }
+  }
+}
+.image-caption{
+  display: block;
+  font-family: @font-family-sans-serif-alternate;
+  font-size: @font-size-base + 1;
+  text-transform: uppercase;
+  color: @color-gray-darker;
+  margin-top: @margin-xsmall * 2;
 }
 label{
   font-family: @font-family-sans-serif;
@@ -399,6 +467,7 @@ hr{
 /* DIVIDER STYLES */
 hr{
   border-top: 3px solid @color-brand-secondary;
+  margin: @margin-xsmall*2 0;
 
   &.large{
     border-top: 4px solid @color-brand-secondary;
@@ -821,14 +890,6 @@ textarea{
   max-width: 890px !important;
 }
 /* END IMAGE ASSET STYLES */
-
-/* BOOTSTRAP OVERRIDES */
-@media (min-width: 1200px){
-  .container{
-    width: 1200px !important;
-  }
-}
-/* END BOOTSTRAP OVERRIDES */
 
 /* ANCHOR NAVIGATION STYELS */
 .style-guide-anchor-nav {

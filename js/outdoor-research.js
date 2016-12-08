@@ -37,6 +37,8 @@ $(function(){
   //Each style guide page
   baseHTML += '<li><a href="/outdoor-research">Core Styles</a></li>';
   baseHTML += '<li><a href="/outdoor-research/templates/single-column.html">Single Column</a></li>';
+  baseHTML += '<li><a href="/outdoor-research/templates/single-column-media.html">Single Column w/ Media</a></li>';
+  baseHTML += '<li><a href="/outdoor-research/templates/components.html">Components</a></li>';
 
   baseHTML += '</ul></div></div>';
 
