@@ -329,6 +329,54 @@ blockquote {
   line-height: 34px;
   text-transform: none;
 }
+blockquote.editorial-blockquote {
+  font-family: "alternate-gothic-no-3-d", sans-serif;
+  font-size: 65px;
+  color: #413d3e;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px 0;
+  line-height: 0.92;
+  margin: 45px 0;
+  position: relative;
+  width: 100%;
+  font-style: normal;
+}
+blockquote.editorial-blockquote.align-left,
+blockquote.editorial-blockquote.align-right,
+blockquote.editorial-blockquote.pull-left,
+blockquote.editorial-blockquote.pull-right {
+  width: 370px;
+  margin-top: 0;
+}
+blockquote.editorial-blockquote:before,
+blockquote.editorial-blockquote:after {
+  content: "";
+  height: 4px;
+  width: 100%;
+  max-width: 370px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -50%;
+  background-color: #231f20;
+}
+@media (min-width: 400px) {
+  blockquote.editorial-blockquote:before,
+  blockquote.editorial-blockquote:after {
+    margin-left: -185px;
+  }
+}
+blockquote.editorial-blockquote:after {
+  top: auto;
+  bottom: 0;
+}
+.editorial-blockquote-attribution {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  text-transform: none;
+}
 p {
   font-family: "proxima-nova", sans-serif;
   font-weight: normal;

@@ -367,6 +367,51 @@ blockquote{
   margin-top: 0;
   line-height: 34px;
   text-transform: none;
+
+  &.editorial-blockquote{
+    font-family: @font-family-sans-serif-alternate;
+    font-size: 65px;
+    color: @color-gray-darker;
+    text-transform: uppercase;
+    text-align: center;
+    padding: @margin-base 0;
+    line-height: 0.92;
+    margin: @margin-medium 0;
+    position: relative;
+    width: 100%;
+    font-style: normal;
+
+    &.align-left, &.align-right, &.pull-left, &.pull-right{
+      width: 370px;
+      margin-top: 0;
+    }
+
+    &:before, &:after{
+      content: "";
+      height: 4px;
+      width: 100%;
+      max-width: 370px; 
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -50%;
+      background-color: @color-brand-secondary;
+
+      @media (min-width: 400px){
+        margin-left: -185px;
+      }
+    }
+    &:after{
+      top: auto;
+      bottom: 0;
+    }
+  }
+}
+.editorial-blockquote-attribution{
+  display: block;
+  margin-top: @margin-base;
+  font-size: @font-size-base + 1;
+  text-transform: none;
 }
 p{
   font-family: @font-family-sans-serif;

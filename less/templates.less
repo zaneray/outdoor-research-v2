@@ -39,6 +39,7 @@
 @margin-medium: 45px;
 @margin-large: 60px;
 @margin-xl: 90px;
+@margin-2xl: 120px;
 /* END Variables */
 
 /* Single Column Content Styles */
@@ -54,9 +55,78 @@
 .single-column-content{
   max-width: 770px;
   margin: @margin-medium auto 0;  
+
+  p{
+    .single-column-image{
+      padding-top: @margin-base;
+    }
+    .editorial-blockquote{
+      margin-top: @margin-medium;
+    }
+  }
 }
 .single-column-content-section{
   margin: @margin-base 0;
+}
+.single-column-image{
+  padding-bottom: @margin-base;
+  display: block;
+  max-width: 100%;
+
+  &.align-left{
+    float: left;
+
+    @media (min-width: 480px){
+      margin-right: @margin-base;
+    }
+  }
+  &.align-right{
+    float: right;
+
+    @media (min-width: 480px){
+      margin-left: @margin-base;
+    }
+  }
+  &.pull-right{
+    float: right;
+
+    @media (min-width: 480px){
+      margin-left: @margin-base;
+    }
+    @media (min-width: 1050px){
+      margin-right: -@margin-2xl;
+    }
+  }
+  &.pull-left{
+    float: left;
+
+    @media (min-width: 480px){
+      margin-right: @margin-base;
+    }
+    @media (min-width: 1050px){
+      margin-left: -@margin-2xl;
+    }
+  }
+  &.full-width{
+    width: 100%;
+  }
+
+  img{
+    max-width: 100%;
+  }
+}
+.single-column-video{
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin: @margin-base 0;
+}
+.video-responsive{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 /* END SINGLE COLUMN STYLES */
 
@@ -93,7 +163,7 @@
   font-family: @font-family-sans-serif;
   font-size: @font-size-h4;
   text-transform: uppercase;
-  padding: @margin-small @margin-base @margin-small 0;
+  padding: @margin-small @margin-large @margin-small 0;
   cursor: pointer;
   width: 100%;
   position: relative;

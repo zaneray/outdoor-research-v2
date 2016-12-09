@@ -28,12 +28,14 @@
            <li class="breadcrumb-link"><a href="#">Footer Category</a></li>
            <li class="breadcrumb-link"><a href="#">Specific Page</a></li>
          </ul>
-         <h1>Components Template</h1>
+         <h1>Components Templates</h1>
          <hr class="large">
       </header>
       <div class="single-column-content">
         <div class="single-column-content-section">
           <h3>Accordion Component - Single Pane Open (FAQ's)</h3>
+
+          <!-- The single pane accordion component is based off of radio buttons, so inherently only 1 pane can be open at a time -->
           <div class="or-accordion">
             <div class="accordion-pane">
               <input type="radio" id="accordion1-pane1" name="accordion1" />
@@ -56,7 +58,7 @@
             <div class="accordion-pane">
               <input type="radio" id="accordion1-pane3" name="accordion1" />
               <label class="accordion-pane-header" for="accordion1-pane3">
-                Accordion Pane 3
+                Accordion Pane 3 If this were a long title like an faq question, it will wrap?
               </label>
               <div class="accordion-pane-content">
                 <p class="large">Any amount of content can go with an accordion content block.  Any HTML, tables, pictures, anything</p>
@@ -67,6 +69,8 @@
         <hr class="small">
         <div class="single-column-content-section">
           <h3>Accordion Component - Multiple Panes Open</h3>
+
+          <!-- The multiple pane accordion component is based off of checkboxes, so inherently only many panes can be open at a time -->
           <div class="or-accordion">
             <div class="accordion-pane">
               <input type="checkbox" id="accordion2-pane1" name="accordion2" />
