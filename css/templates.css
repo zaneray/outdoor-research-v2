@@ -4,6 +4,9 @@
 /* Single Column Content Styles */
 .content-wrapper {
   margin: 30px 0 60px 0;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 15px;
+  color: #413d3e;
 }
 .content-page-header {
   margin-top: 15px;
@@ -22,7 +25,7 @@
   margin-top: 45px;
 }
 .single-column-content-section {
-  margin: 30px 0;
+  margin: 60px 0;
 }
 .single-column-image {
   padding-bottom: 30px;
@@ -104,7 +107,7 @@
   padding: 0;
 }
 .or-accordion input:checked ~ .accordion-pane-content {
-  max-height: 10em;
+  max-height: 100em;
 }
 .or-accordion input:checked + .accordion-pane-header:before {
   transform: rotate(90deg);
