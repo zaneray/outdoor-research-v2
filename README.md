@@ -1,4 +1,4 @@
-Live demo: http://zaneray.github.io/outdoor-research/
+Live demo: http://zaneray.github.io/outdoor-research-v2/
 
 # Outdoor Research Style Guide
 The Outdoor Research Style Guide, developed by The ZaneRay Group, is a living Style Guide that may be updated as necessary.  
