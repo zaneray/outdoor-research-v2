@@ -63,16 +63,19 @@
   font-family: 'IntroRust-Base-Line'; 
   src: url("../fonts/IntroRust/Fontfabric-Intro-Rust-Base-Line.otf") format("opentype");
   font-style: normal;
+  font-weight: 400;
 }
 @font-face {
   font-family: 'IntroRust-Base'; 
   src: url("../fonts/IntroRust/Fontfabric-Intro-Rust-Base.otf") format("opentype");
   font-style: normal;
+  font-weight: 400;
 }
 @font-face {
   font-family: 'Grumpy24'; 
   src: url("../fonts/Grumpy/Suomi-Grumpy-Black24.otf") format("opentype");
   font-style: normal;
+  font-weight: 400;
 }
 
 /* STYLE GUIDE FRAMEWORK*/
@@ -313,7 +316,6 @@ h1, h2, h3, h4, h5, h6{
 
 h1{
   font-family: @font-family-sans-serif-new;
-  font-weight: 500;
   font-size: 40px;
   color: @body-bold-color;
   margin-top: 0;
@@ -329,7 +331,6 @@ h1{
 }
 h2{
   font-family: @font-family-sans-serif-new;
-  font-weight: 300;
   font-size: @font-size-h2;
   color: @body-bold-color;
   margin-top: 0;
@@ -338,7 +339,6 @@ h2{
 }
 h3{
   font-family: @font-family-sans-serif-new-alt;
-  font-weight: 900;
   font-size: @font-size-h3;
   color: @body-bold-color;
   margin-top: 0;
@@ -347,11 +347,11 @@ h3{
 
   &.alt{
     font-family: @font-family-serif;
+    text-transform: none;
   }
 }
 h4{
   font-family: @font-family-sans-serif-new-alt;
-  font-weight: normal;
   font-size: @font-size-h4;
   color: @body-bold-color;
   margin-top: 0;
