@@ -18,8 +18,11 @@
 @icon-color: @color-gray-dark;
 @body-bold-color: @color-gray-dark;
 
+@font-family-sans-serif-new: "IntroRust-Base-Line", sans-serif;
+@font-family-sans-serif-new-alt: "IntroRust-Base", sans-serif;
 @font-family-sans-serif: "proxima-nova", sans-serif;
 @font-family-sans-serif-alternate: "alternate-gothic-no-3-d", sans-serif;
+@font-family-serif: "Grumpy24", serif;
 @font-family-handwritten: "handOR", sans-serif;
 @icomoon-font-family: "or-icomoon";
 
@@ -54,6 +57,23 @@
   text-transform: none;
 }
 /* END Mixins */
+
+/* Font Families */
+@font-face {
+  font-family: 'IntroRust-Base-Line'; 
+  src: url("/Users/Shared/proj_zr/outdoor-research-v2/fonts/IntroRust/Fontfabric-Intro-Rust-Base-Line.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IntroRust-Base'; 
+  src: url("/Users/Shared/proj_zr/outdoor-research-v2/fonts/IntroRust/Fontfabric-Intro-Rust-Base.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Grumpy24'; 
+  src: url("/Users/Shared/proj_zr/outdoor-research-v2/fonts/Grumpy/Suomi-Grumpy-Black24.otf") format("opentype");
+  font-style: normal;
+}
 
 /* STYLE GUIDE FRAMEWORK*/
 .style-guide-container{
@@ -292,8 +312,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-  font-family: @font-family-sans-serif;
-  font-weight: 900;
+  font-family: @font-family-sans-serif-new;
+  font-weight: 500;
   font-size: 40px;
   color: @body-bold-color;
   margin-top: 0;
@@ -308,7 +328,7 @@ h1{
   }
 }
 h2{
-  font-family: @font-family-sans-serif;
+  font-family: @font-family-sans-serif-new;
   font-weight: 300;
   font-size: @font-size-h2;
   color: @body-bold-color;
@@ -317,16 +337,20 @@ h2{
   text-transform: uppercase;
 }
 h3{
-  font-family: @font-family-sans-serif;
+  font-family: @font-family-sans-serif-new-alt;
   font-weight: 900;
   font-size: @font-size-h3;
   color: @body-bold-color;
   margin-top: 0;
   line-height: 1;
   text-transform: uppercase;
+
+  &.alt{
+    font-family: @font-family-serif;
+  }
 }
 h4{
-  font-family: @font-family-sans-serif;
+  font-family: @font-family-sans-serif-new-alt;
   font-weight: normal;
   font-size: @font-size-h4;
   color: @body-bold-color;
@@ -336,6 +360,7 @@ h4{
 
   &.alt{
     color: @color-brand-secondary;
+    font-family: @font-family-serif;
   }
 }
 h5{
@@ -357,10 +382,9 @@ h6{
   text-transform: uppercase;
 }
 blockquote{
-  font-family: @font-family-sans-serif;
+  font-family: @font-family-serif;
   font-weight: normal;
   border-left: none;
-  font-style: italic;
   font-size: 28px;
   color: @color-gray;
   text-align: center;

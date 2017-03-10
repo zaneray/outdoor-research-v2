@@ -3,6 +3,22 @@
 /* END Variables */
 /* Mixins */
 /* END Mixins */
+/* Font Families */
+@font-face {
+  font-family: 'IntroRust-Base-Line';
+  src: url("/Users/Shared/proj_zr/outdoor-research-v2/fonts/IntroRust/Fontfabric-Intro-Rust-Base-Line.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IntroRust-Base';
+  src: url("/Users/Shared/proj_zr/outdoor-research-v2/fonts/IntroRust/Fontfabric-Intro-Rust-Base.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Grumpy24';
+  src: url("/Users/Shared/proj_zr/outdoor-research-v2/fonts/Grumpy/Suomi-Grumpy-Black24.otf") format("opentype");
+  font-style: normal;
+}
 /* STYLE GUIDE FRAMEWORK*/
 .style-guide-container {
   margin: 60px auto;
@@ -250,8 +266,8 @@ h6 {
   margin-bottom: 0.3em;
 }
 h1 {
-  font-family: "proxima-nova", sans-serif;
-  font-weight: 900;
+  font-family: "IntroRust-Base-Line", sans-serif;
+  font-weight: 500;
   font-size: 40px;
   color: #4a4a4a;
   margin-top: 0;
@@ -270,7 +286,7 @@ h1.display-hand {
   text-transform: none;
 }
 h2 {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "IntroRust-Base-Line", sans-serif;
   font-weight: 300;
   font-size: 30px;
   color: #4a4a4a;
@@ -279,7 +295,7 @@ h2 {
   text-transform: uppercase;
 }
 h3 {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "IntroRust-Base", sans-serif;
   font-weight: 900;
   font-size: 24px;
   color: #4a4a4a;
@@ -287,8 +303,11 @@ h3 {
   line-height: 1;
   text-transform: uppercase;
 }
+h3.alt {
+  font-family: "Grumpy24", serif;
+}
 h4 {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "IntroRust-Base", sans-serif;
   font-weight: normal;
   font-size: 20px;
   color: #4a4a4a;
@@ -298,6 +317,7 @@ h4 {
 }
 h4.alt {
   color: #231f20;
+  font-family: "Grumpy24", serif;
 }
 h5 {
   font-family: "proxima-nova", sans-serif;
@@ -318,10 +338,9 @@ h6 {
   text-transform: uppercase;
 }
 blockquote {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Grumpy24", serif;
   font-weight: normal;
   border-left: none;
-  font-style: italic;
   font-size: 28px;
   color: #9b9b9b;
   text-align: center;
