@@ -349,7 +349,6 @@ blockquote {
   text-transform: none;
 }
 blockquote.editorial-blockquote {
-  font-family: "alternate-gothic-no-3-d", sans-serif;
   font-size: 65px;
   color: #413d3e;
   text-transform: uppercase;
