@@ -6,17 +6,17 @@
 /* Font Families */
 @font-face {
   font-family: 'IntroRust-Base-Line';
-  src: url("/Users/Shared/proj_zr/outdoor-research-v2/fonts/IntroRust/Fontfabric-Intro-Rust-Base-Line.otf") format("opentype");
+  src: url("fonts/IntroRust/Fontfabric-Intro-Rust-Base-Line.otf") format("opentype");
   font-style: normal;
 }
 @font-face {
   font-family: 'IntroRust-Base';
-  src: url("/Users/Shared/proj_zr/outdoor-research-v2/fonts/IntroRust/Fontfabric-Intro-Rust-Base.otf") format("opentype");
+  src: url("fonts/IntroRust/Fontfabric-Intro-Rust-Base.otf") format("opentype");
   font-style: normal;
 }
 @font-face {
   font-family: 'Grumpy24';
-  src: url("/Users/Shared/proj_zr/outdoor-research-v2/fonts/Grumpy/Suomi-Grumpy-Black24.otf") format("opentype");
+  src: url("fonts/Grumpy/Suomi-Grumpy-Black24.otf") format("opentype");
   font-style: normal;
 }
 /* STYLE GUIDE FRAMEWORK*/
