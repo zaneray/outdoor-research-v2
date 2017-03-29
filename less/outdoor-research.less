@@ -30,9 +30,10 @@
 @font-size-h2: 30px;
 @font-size-h3: 24px;
 @font-size-h4: 20px;
-@font-size-h5: 15px;
-@font-size-h6: 14px;
+@font-size-h5: 16px;
+@font-size-h6: 12px;
 @font-size-base: 15px;
+@font-size-technical-h1: 48px;
 
 @transition-base: all 0.3s ease-out;
 
@@ -42,16 +43,18 @@
 @margin-medium: 45px;
 @margin-large: 60px;
 @margin-xl: 90px;
+
+@breakpoint-sm: 768px;
 /* END Variables */
 
 /* Mixins */
 .technical-content(){
-  font-family: @font-family-sans-serif-alternate;
-  font-size: @font-size-h1;
+  font-family: @font-family-sans-serif-new;
+  font-size: @font-size-technical-h1;
   font-weight: normal;
 }
 .lifestyle-content(){
-  font-family: @font-family-handwritten;
+  font-family: @font-family-sans-serif-new;
   font-size: @font-size-h1 ;
   font-weight: normal;
   text-transform: none;
@@ -264,7 +267,7 @@ body{
   padding: @margin-small @margin-small;
   background-color: #fff;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   transition: @transition-base;
 
   @media (min-width: 768px){
@@ -361,15 +364,14 @@ h4{
   text-transform: none;
 
   &.alt{
-    color: @color-brand-secondary;
     font-family: @font-family-serif;
   }
 }
 h5{
-  font-family: @font-family-sans-serif;
+  font-family: @font-family-sans-serif-new-alt;
   font-weight: bold;
   font-size: @font-size-h5;
-  color: @color-brand-secondary;
+  color: @body-bold-color;
   margin-top: 0;
   line-height: 22px;
   text-transform: none;
@@ -388,23 +390,26 @@ blockquote{
   font-weight: normal;
   border-left: none;
   font-size: 28px;
-  color: @color-gray;
+  color: @color-gray-dark;
   text-align: center;
   margin-top: 0;
   line-height: 34px;
   text-transform: none;
 
   &.editorial-blockquote{
-    font-size: 65px;
-    color: @color-gray-darker;
-    text-transform: uppercase;
-    text-align: center;
+    font-size: 48px;
+    color: @color-gray-dark;
+    text-align: left;
     padding: @margin-base 0;
     line-height: 0.92;
     margin: @margin-medium 0;
     position: relative;
     width: 100%;
     font-style: normal;
+
+    @media (min-width: @breakpoint-sm) {
+      text-align: center;
+    }
 
     &.align-left, &.align-right, &.pull-left, &.pull-right{
       width: 370px;
@@ -432,12 +437,12 @@ blockquote{
     }
   }
 }
-.editorial-blockquote-attribution{
+
+.blockquote-attribution{
   display: block;
   margin-top: @margin-base;
-  font-size: @font-size-base + 1;
-  text-transform: none;
 }
+
 p{
   font-family: @font-family-sans-serif;
   font-weight: normal;
@@ -556,16 +561,18 @@ hr{
 /* BUTTON STYLES */
 .btn{
   display: block;
-  font-family: @font-family-sans-serif;
+  font-family: @font-family-sans-serif-new-alt;
   font-weight: bold;
   font-size: @font-size-base;
   text-transform: uppercase;
   background-color: transparent;
   border: 2px solid @color-brand-secondary;
+  border-radius: 5px;
   color: @color-brand-secondary;
   width: 250px;
   height: 40px;
   transition: @transition-base;
+  cursor: pointer;
 
   &:hover{
     border-color: @color-action;
