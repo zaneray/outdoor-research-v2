@@ -1,9 +1,9 @@
-Live demo: http://zaneray.github.io/outdoor-research/
+Live demo: http://zaneray.github.io/outdoor-research-v2/
 
 # Outdoor Research Style Guide
 The Outdoor Research Style Guide, developed by The ZaneRay Group, is a living Style Guide that may be updated as necessary.  
 
-Make any and all changes in the 'gh-pages' branch in order to see your changes in the live demo page (http://zaneray.github.io/outdoor-research/).
+Make any and all changes in the 'gh-pages' branch in order to see your changes in the live demo page (http://zaneray.github.io/outdoor-research-v2/).
 
 A gruntfile.js has been included on the 'gh-pages' branch in order to compile the outdoor-research.less file into the requisite outdoor-research.css file with the necessary CSS3 vendor prefixes. 
 
